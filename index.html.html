@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026–2027 Room Moms Command Center</title>
+<meta name="description" content="Room Moms command center for teacher favorites, events, volunteering, party planning, appreciation, and resources.">
+<style>
+:root{
+  --bg:#fffaf7;--paper:#ffffff;--ink:#2f2940;--muted:#6d6678;--rose:#f3c7d8;
+  --lav:#d8ccf3;--mint:#d8efe8;--peach:#ffe6cf;--gold:#f3df9b;--accent:#7b5a95;
+  --accent2:#b96888;--line:#ebe4ee;--shadow:0 12px 30px rgba(63,43,80,.10);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+.hero{background:linear-gradient(135deg,#f8d9e5 0%,#e4d8f7 55%,#dff2ec 100%);padding:70px 0 56px;border-bottom:1px solid rgba(255,255,255,.8)}
+.badge{display:inline-block;background:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.9);padding:7px 12px;border-radius:999px;font-weight:800;font-size:.86rem;letter-spacing:.02em}
+.hero h1{font-size:clamp(2.4rem,6vw,4.8rem);line-height:1.02;margin:16px 0 16px;max-width:900px}
+.hero p{font-size:1.1rem;max-width:760px;color:#584f62;margin:0}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:8px;align-items:center;overflow-x:auto;padding:10px 0}
+.nav a{text-decoration:none;white-space:nowrap;padding:9px 12px;border-radius:999px;font-weight:750;color:#51485c}
+.nav a:hover{background:#f4eef7}
+section{padding:58px 0}
+.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:24px}
+.section-head h2{font-size:clamp(1.8rem,4vw,2.7rem);margin:0}
+.section-head p{margin:0;max-width:650px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+.quick .card{grid-column:span 3}
+.quick .icon{font-size:2rem;margin-bottom:8px}
+.card h3{margin:0 0 8px;font-size:1.25rem}
+.card p{margin:0;color:var(--muted)}
+.btn{display:inline-block;margin-top:16px;text-decoration:none;background:var(--accent);color:white;padding:10px 14px;border-radius:12px;font-weight:800}
+.btn.secondary{background:#f3edf6;color:#5f4b70}
+.teacher{grid-column:span 4}
+.teacher .top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.pill{font-size:.78rem;font-weight:800;padding:5px 9px;border-radius:999px;background:#f4edf7;color:#6a5278}
+.teacher ul,.checklist,.events{list-style:none;padding:0;margin:16px 0 0}
+.teacher li,.events li{padding:9px 0;border-top:1px solid var(--line)}
+.teacher li strong{color:#5d4a6c}
+.feature{grid-column:span 6}
+.full{grid-column:1/-1}
+.tint-rose{background:#fff3f7}.tint-mint{background:#f3fbf8}.tint-peach{background:#fff8ef}.tint-lav{background:#f8f5fc}
+.event-row{display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:start;padding:14px 0;border-top:1px solid var(--line)}
+.datebox{background:#f3edf6;border-radius:14px;padding:10px;text-align:center;font-weight:900}
+.datebox small{display:block;color:var(--muted);font-weight:700}
+.checklist li{display:flex;gap:10px;align-items:flex-start;padding:8px 0}
+.check{width:18px;height:18px;border:2px solid #b6a7bf;border-radius:5px;margin-top:3px;flex:0 0 auto}
+.callout{border-left:5px solid var(--accent2);padding:16px 18px;background:#fff;border-radius:14px}
+.notice{font-size:.92rem;color:var(--muted);margin-top:12px}
+.footer{padding:38px 0 56px;color:#6a6371;text-align:center}
+.edit-tip{background:#fffbe9;border:1px solid #f0e2a0;border-radius:16px;padding:16px 18px}
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+details+details{margin-top:10px}
+summary{font-weight:850;cursor:pointer}
+@media(max-width:900px){.quick .card{grid-column:span 6}.teacher{grid-column:span 12}.feature{grid-column:span 12}}
+@media(max-width:560px){.quick .card{grid-column:span 12}.hero{padding:52px 0 42px}.event-row{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:8px}}
+</style>
+</head>
+<body>
+<header class="hero" id="home">
+  <div class="wrap">
+    <span class="badge">2026–2027 SCHOOL YEAR</span>
+    <h1>Room Moms Command Center</h1>
+    <p>One easy place for teacher favorites, classroom parties, volunteer sign-ups, important dates, appreciation ideas, and parent resources.</p>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#home">Home</a>
+    <a href="#teachers">Teachers</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#parties">Party Planner</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#appreciation">Appreciation</a>
+    <a href="#resources">Resources</a>
+  </div>
+</nav>
+
+<main>
+<section class="quick">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Everything parents need, fast.</h2></div>
+      <p>Tap a section and jump straight to what you need. This page is designed to work well on phones at pickup, in the parking lot, or while planning from home.</p>
+    </div>
+    <div class="grid">
+      <div class="card tint-rose"><div class="icon">💗</div><h3>Teacher Favorites</h3><p>Gift ideas, drinks, snacks, restaurants, stores, colors, hobbies, and wish lists.</p><a class="btn" href="#teachers">View teachers</a></div>
+      <div class="card tint-mint"><div class="icon">📅</div><h3>Important Dates</h3><p>Parties, school events, appreciation days, and deadlines in one place.</p><a class="btn" href="#calendar">View calendar</a></div>
+      <div class="card tint-peach"><div class="icon">🎉</div><h3>Party Planner</h3><p>Theme, supplies, food, volunteers, games, and day-of checklist.</p><a class="btn" href="#parties">Plan a party</a></div>
+      <div class="card tint-lav"><div class="icon">🙋‍♀️</div><h3>Volunteer</h3><p>Clear jobs parents can claim without digging through a long group text.</p><a class="btn" href="#volunteer">See jobs</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="teachers">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Teacher Hubs</h2></div>
+      <p>Replace the placeholder details below with each teacher’s actual favorites whenever you have them. The layout is already built.</p>
+    </div>
+    <div class="grid">
+      <article class="card teacher">
+        <div class="top"><div><h3>Miss Hales</h3><p>Teacher hub</p></div><span class="pill">Favorites</span></div>
+        <ul>
+          <li><strong>Drink:</strong> Add favorite</li><li><strong>Coffee order:</strong> Add favorite</li><li><strong>Snack:</strong> Add favorite</li><li><strong>Candy:</strong> Add favorite</li><li><strong>Restaurant:</strong> Add favorite</li><li><strong>Store:</strong> Add favorite</li><li><strong>Color:</strong> Add favorite</li><li><strong>Flower:</strong> Add favorite</li><li><strong>Scent:</strong> Add favorite</li><li><strong>Hobbies:</strong> Add favorite</li><li><strong>Classroom needs:</strong> Add items</li>
+        </ul>
+        <a class="btn secondary" href="#">Add wishlist link</a>
+      </article>
+      <article class="card teacher">
+        <div class="top"><div><h3>Mr. Jackson</h3><p>Teacher hub</p></div><span class="pill">Favorites</span></div>
+        <ul>
+          <li><strong>Drink:</strong> Add favorite</li><li><strong>Coffee order:</strong> Add favorite</li><li><strong>Snack:</strong> Add favorite</li><li><strong>Candy:</strong> Add favorite</li><li><strong>Restaurant:</strong> Add favorite</li><li><strong>Store:</strong> Add favorite</li><li><strong>Color:</strong> Add favorite</li><li><strong>Flower:</strong> Add favorite</li><li><strong>Scent:</strong> Add favorite</li><li><strong>Hobbies:</strong> Add favorite</li><li><strong>Classroom needs:</strong> Add items</li>
+        </ul>
+        <a class="btn secondary" href="#">Add wishlist link</a>
+      </article>
+      <article class="card teacher">
+        <div class="top"><div><h3>Miss Stewart</h3><p>Teacher hub</p></div><span class="pill">Favorites</span></div>
+        <ul>
+          <li><strong>Drink:</strong> Add favorite</li><li><strong>Coffee order:</strong> Add favorite</li><li><strong>Snack:</strong> Add favorite</li><li><strong>Candy:</strong> Add favorite</li><li><strong>Restaurant:</strong> Add favorite</li><li><strong>Store:</strong> Add favorite</li><li><strong>Color:</strong> Add favorite</li><li><strong>Flower:</strong> Add favorite</li><li><strong>Scent:</strong> Add favorite</li><li><strong>Hobbies:</strong> Add favorite</li><li><strong>Classroom needs:</strong> Add items</li>
+        </ul>
+        <a class="btn secondary" href="#">Add wishlist link</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="calendar">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Calendar & Important Dates</h2></div>
+      <p>Use this as the master list so parents aren’t hunting through messages. Add dates as the school year fills in.</p>
+    </div>
+    <div class="card">
+      <div class="event-row"><div class="datebox">SEP<small>Add date</small></div><div><h3>First fall classroom event</h3><p>Add time, location, teacher/class, and what parents need to know.</p></div></div>
+      <div class="event-row"><div class="datebox">OCT<small>Add date</small></div><div><h3>Fall / Halloween party</h3><p>Add party theme, volunteer deadline, food notes, and any school rules.</p></div></div>
+      <div class="event-row"><div class="datebox">DEC<small>Add date</small></div><div><h3>Winter celebration</h3><p>Add gift or activity details, sign-up deadline, and day-of instructions.</p></div></div>
+      <div class="event-row"><div class="datebox">MAY<small>Add date</small></div><div><h3>Teacher Appreciation</h3><p>Add the school’s appreciation schedule, daily themes, and class plan.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="parties">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Party Planner</h2></div>
+      <p>A repeatable checklist for every classroom celebration so nothing gets forgotten and nobody has to reinvent the wheel.</p>
+    </div>
+    <div class="grid">
+      <div class="card feature tint-peach">
+        <h3>Before the party</h3>
+        <ul class="checklist">
+          <li><span class="check"></span><span>Confirm date, time, theme, and teacher approval.</span></li>
+          <li><span class="check"></span><span>Check allergy and food rules.</span></li>
+          <li><span class="check"></span><span>Create volunteer jobs and supply needs.</span></li>
+          <li><span class="check"></span><span>Confirm games, craft, snack, and cleanup plan.</span></li>
+          <li><span class="check"></span><span>Send parent reminder 48–72 hours before.</span></li>
+        </ul>
+      </div>
+      <div class="card feature tint-mint">
+        <h3>Day-of checklist</h3>
+        <ul class="checklist">
+          <li><span class="check"></span><span>Decorations and table setup.</span></li>
+          <li><span class="check"></span><span>Food, drinks, napkins, plates, and utensils.</span></li>
+          <li><span class="check"></span><span>Game/craft supplies and backup activity.</span></li>
+          <li><span class="check"></span><span>Teacher gift or class card, if planned.</span></li>
+          <li><span class="check"></span><span>Trash bags and cleanup crew.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="volunteer">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Volunteer Jobs</h2></div>
+      <p>These are the roles to post in your SignUpGenius, Google Form, or school-approved signup tool. Add the real links when you have them.</p>
+    </div>
+    <div class="grid">
+      <div class="card quick-card feature"><h3>🎈 Party setup</h3><p>Decorating, table setup, labels, supplies, and pre-party prep.</p><a class="btn secondary" href="#">Add signup link</a></div>
+      <div class="card quick-card feature"><h3>🧁 Snacks & drinks</h3><p>Food, drinks, paper goods, allergy-safe items, and serving supplies.</p><a class="btn secondary" href="#">Add signup link</a></div>
+      <div class="card quick-card feature"><h3>✂️ Craft or game lead</h3><p>Run one activity station and bring any needed materials.</p><a class="btn secondary" href="#">Add signup link</a></div>
+      <div class="card quick-card feature"><h3>🧹 Cleanup crew</h3><p>Fast end-of-party reset so the teacher isn’t left with the mess.</p><a class="btn secondary" href="#">Add signup link</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="appreciation">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Teacher Appreciation</h2></div>
+      <p>Keep the class plan coordinated, thoughtful, and easy for parents to participate in at any budget.</p>
+    </div>
+    <div class="grid">
+      <div class="card feature tint-rose"><h3>Easy class ideas</h3><ul class="checklist"><li><span class="check"></span><span>Class card with one note from every student.</span></li><li><span class="check"></span><span>Favorite drink/snack surprise.</span></li><li><span class="check"></span><span>Group gift card to a favorite store or restaurant.</span></li><li><span class="check"></span><span>Flowers, classroom supplies, or wishlist item.</span></li></ul></div>
+      <div class="card feature tint-lav"><h3>Keep it organized</h3><p>Post the plan, deadline, contribution instructions, and teacher favorites in one place. Avoid publishing personal payment information on a public website; use your parent group or school-approved tool for that.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <div class="wrap">
+    <div class="section-head">
+      <div><h2>Parent Resources</h2></div>
+      <p>A simple home for the links and documents everyone always asks for.</p>
+    </div>
+    <div class="grid">
+      <div class="card feature">
+        <details open><summary>School links</summary><p class="notice">Add school calendar, PTO page, lunch menu, attendance, handbook, or other approved links here.</p></details>
+        <details><summary>Classroom forms</summary><p class="notice">Add volunteer forms, party forms, teacher wish lists, or classroom supply lists here.</p></details>
+        <details><summary>Room Mom notes</summary><p class="notice">Add any non-sensitive reminders, procedures, or planning notes parents should see.</p></details>
+      </div>
+      <div class="card feature">
+        <div class="edit-tip">
+          <strong>Quick editing tip:</strong>
+          <p class="notice">Search this file for the words “Add favorite,” “Add date,” or “Add signup link.” Replace only those placeholder words with the real information. The design can stay exactly as-is.</p>
+        </div>
+        <div class="callout" style="margin-top:16px">
+          <strong>Privacy note:</strong>
+          <p class="notice">Because a public Netlify site can be viewed by anyone with the link, don’t post student names, private phone numbers, personal payment handles, or private class photos here unless your school specifically approves it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <strong>2026–2027 Room Moms Command Center</strong>
+    <div>Made for teachers, students, and the grown-ups keeping all the plates spinning.</div>
+  </div>
+</footer>
+</body>
+</html>
